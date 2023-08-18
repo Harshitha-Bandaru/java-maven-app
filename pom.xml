@@ -88,6 +88,16 @@
             <version>2.3.4.RELEASE</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.owasp/dependency-check-maven -->
+        <!-- https://mvnrepository.com/artifact/org.owasp/dependency-check-maven -->
+        <dependency>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>8.3.1</version>
+        </dependency>
+
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
