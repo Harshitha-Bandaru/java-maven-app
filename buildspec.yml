@@ -14,5 +14,26 @@ phases:
    commands:
      - echo "Running unit tests"
      - mvn test
+     version: 0.2
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  pre_build:
+    commands:
+      - echo "Pre-build stage"
+  build:
+    commands:
+      - echo "Building Java Application"
+      - mvn clean install -DskipTests=true
+  post_build:
+   commands:
+     - echo "Running unit tests"
+     - mvn test
+
+     - echo "Running Jacoco for code coverage..."
+     - mvn jacoco:report
+  
+
   
   
