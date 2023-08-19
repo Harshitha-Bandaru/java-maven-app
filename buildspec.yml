@@ -9,6 +9,7 @@ phases:
       #- unzip awscliv2.zip
       #- sudo ./aws/install
       - which aws
+      - aws --version
   pre_build:
     commands:
       - echo "Pre-build stage"
