@@ -3,6 +3,10 @@ phases:
   install:
     runtime-versions:
       java: corretto8
+      - echo "Installing AWS CLI on server"
+      - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - unzip awscliv2.zip
+      - sudo ./aws/install
   pre_build:
     commands:
       - echo "Pre-build stage"
