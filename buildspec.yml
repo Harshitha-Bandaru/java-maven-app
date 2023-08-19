@@ -36,5 +36,4 @@ phases:
      - mvn org.owasp:dependency-check-maven:check
 
      - echo "Build Docker image"
-     - sudo service docker start
      - docker build -t $ecr_repository_uri . 
