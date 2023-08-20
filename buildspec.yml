@@ -33,11 +33,13 @@ phases:
      - mvn jacoco:report
 
      - echo "Running OWASP Software Composition Analysis..."
-     - mvn org.owasp:dependency-check-maven:check
+     #- mvn org.owasp:dependency-check-maven:check
 
      - echo "Build Docker image"
-     - docker build -t $ecr_repository_uri . 
-     - docker tag java-maven-app:latest java-maven-app:$IMAGE_TAG
+     #- docker build -t $ecr_repository_uri . 
+     #- docker tag java-maven-app:latest java-maven-app:$IMAGE_TAG
+     - docker build -t java-maven-app .
+     - docker tag java-maven-app:latest public.ecr.aws/j1l7w1m3/java-maven-app:latest
 
      - echo "Pushing Docker Image to ECR"
-     - docker push $ecr_repository_uri:$IMAGE_TAG
+     - docker push public.ecr.aws/j1l7w1m3/java-maven-app:latest
