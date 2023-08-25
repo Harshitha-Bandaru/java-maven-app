@@ -42,4 +42,4 @@ phases:
      - docker tag java-maven-app:latest public.ecr.aws/j1l7w1m3/java-maven-app:latest
 
      - echo "Pushing Docker Image to ECR"
-     #- docker push public.ecr.aws/j1l7w1m3/java-maven-app:latest
+     - docker push public.ecr.aws/j1l7w1m3/java-maven-app:latest
