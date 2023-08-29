@@ -37,11 +37,11 @@
                         </archive>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>4.0.1</version>
-                </plugin>
+<!--                <plugin>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                    <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                    <version>4.0.1</version>-->
+<!--                </plugin>-->
 
                 <!-- to handle any Java version mismatch, add the following configuration for maven-compiler-plugin -->
                 <plugin>
