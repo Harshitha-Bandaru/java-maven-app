@@ -1,4 +1,6 @@
-FROM openjdk:8-jre-alpine
+#FROM openjdk:8-jre-alpine
+
+FROM tomcat:9.0.8-jre8-alpine
 
 EXPOSE 8080
 
